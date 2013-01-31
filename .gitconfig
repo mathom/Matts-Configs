@@ -1,0 +1,10 @@
+[color]
+    ui = true
+[alias]
+    br = branch
+    co = checkout
+    cp = cherry-pick
+    plog = log --graph --all --decorate
+    slog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    st = status
+    tracking = for-each-ref --format='%(refname:short) <- %(upstream:short)' refs/heads
