@@ -24,3 +24,9 @@ antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-theme mathom/Matts-Configs themes/mathom
 
 antigen-apply
+
+function chpwd() {
+    if [ -d .venv ]; then
+        . .venv/bin/activate
+    fi
+}
