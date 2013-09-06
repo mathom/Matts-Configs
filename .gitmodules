@@ -1,3 +1,4 @@
 [submodule "vim"]
 	path = vim
 	url = git@github.com:beardedprojamz/VimConf.git
+        ignore = dirty
