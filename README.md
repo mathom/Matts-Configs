@@ -12,10 +12,7 @@ This ensures that the vim submodule's submodules are downloaded.
 After cloning, you can easily make symlinks with [GNU Stow](http://www.gnu.org/software/stow/).
 ```
 cd Matts-Configs
-stow tmux
-stow git
-stow vim
-stow zsh
+stow tmux git vim zsh
 ```
 
 # Themes
