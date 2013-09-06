@@ -13,7 +13,7 @@ export EDITOR=vim
 
 source ~/.antigen.zsh
 
-antigen-lib
+antigen-use oh-my-zsh
 
 antigen-bundle zsh-users/zsh-syntax-highlighting
 
