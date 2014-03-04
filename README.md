@@ -12,8 +12,13 @@ This ensures that the vim submodule's submodules are downloaded.
 After cloning, you can easily make symlinks with [GNU Stow](http://www.gnu.org/software/stow/).
 ```
 cd Matts-Configs
+
+# install every package
 stow -t ~ tmux git vim zsh dircolors
+# install my custom vim stuff
 stow -t ~ --override .vimrc_custom vimrc_custom
+# install my bin scripts
+stow -t ~/bin bin
 ```
 
 # Themes

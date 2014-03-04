@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mounted=$(cat /etc/mtab | grep smbnetfs)
+
+if [ -z "$mounted" ]; then
+	smbnetfs ~/Network
+fi
