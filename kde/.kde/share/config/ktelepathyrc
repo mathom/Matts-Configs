@@ -1,0 +1,17 @@
+[Appearance]
+displayHeader=false
+fontFamily=Droid Serif
+fontSize=11
+styleName=Ravenant.AdiumMessageStyle
+styleVariant=Blue-Grey
+useCustomFont=true
+
+[GroupsState]
+Facebook Friends=false
+Family=true
+Friends=true
+
+[LastPresence]
+PresenceMessage=
+PresenceStatus=available
+PresenceType=2
