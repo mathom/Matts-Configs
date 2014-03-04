@@ -13,12 +13,15 @@ After cloning, you can easily make symlinks with [GNU Stow](http://www.gnu.org/s
 ```
 cd Matts-Configs
 
-# install every package
+# install general packages (cross platform)
 stow -t ~ tmux git vim zsh dircolors
 # install my custom vim stuff
 stow -t ~ --override .vimrc_custom vimrc_custom
 # install my bin scripts
 stow -t ~/bin bin
+
+# install linux desktop stuff
+stow -t ~ kde
 ```
 
 # Themes
