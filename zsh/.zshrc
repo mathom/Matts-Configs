@@ -28,3 +28,6 @@ function chpwd() {
     fi
 }
 
+if [[ -a ~/.dircolors ]] {
+    eval `dircolors ~/.dircolors`
+}
