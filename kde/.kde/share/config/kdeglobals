@@ -1,0 +1,179 @@
+[$Version]
+update_info=kded.upd:kde3.0
+
+[Appmenu Style]
+Style=InApplication
+
+[ColorEffects:Disabled]
+Color=20,20,20
+ColorAmount=0.3
+ColorEffect=1
+ContrastAmount=0.7
+ContrastEffect=1
+IntensityAmount=0.25
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=0,0,0
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.4
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=66,65,64
+BackgroundNormal=45,45,45
+DecorationFocus=160,160,160
+DecorationHover=176,176,176
+ForegroundActive=240,240,240
+ForegroundInactive=120,119,117
+ForegroundLink=216,216,216
+ForegroundNegative=232,88,72
+ForegroundNeutral=192,162,95
+ForegroundNormal=180,180,180
+ForegroundPositive=120,183,83
+ForegroundVisited=142,121,165
+
+[Colors:Selection]
+BackgroundAlternate=138,161,184
+BackgroundNormal=87,101,113
+DecorationFocus=160,160,160
+DecorationHover=176,176,176
+ForegroundActive=240,240,240
+ForegroundInactive=166,166,166
+ForegroundLink=216,216,216
+ForegroundNegative=232,88,72
+ForegroundNeutral=192,162,95
+ForegroundNormal=255,255,255
+ForegroundPositive=120,183,83
+ForegroundVisited=142,121,165
+
+[Colors:Tooltip]
+BackgroundAlternate=17,51,86
+BackgroundNormal=28,28,28
+DecorationFocus=160,160,160
+DecorationHover=176,176,176
+ForegroundActive=240,240,240
+ForegroundInactive=120,119,117
+ForegroundLink=216,216,216
+ForegroundNegative=232,88,72
+ForegroundNeutral=192,162,95
+ForegroundNormal=157,161,173
+ForegroundPositive=120,183,83
+ForegroundVisited=142,121,165
+
+[Colors:View]
+BackgroundAlternate=45,45,45
+BackgroundNormal=60,60,60
+DecorationFocus=160,160,160
+DecorationHover=176,176,176
+ForegroundActive=240,240,240
+ForegroundInactive=120,119,117
+ForegroundLink=216,216,216
+ForegroundNegative=232,88,72
+ForegroundNeutral=192,162,95
+ForegroundNormal=180,180,180
+ForegroundPositive=120,183,83
+ForegroundVisited=142,121,165
+
+[Colors:Window]
+BackgroundAlternate=52,51,50
+BackgroundNormal=50,50,50
+DecorationFocus=160,160,160
+DecorationHover=176,176,176
+ForegroundActive=240,240,240
+ForegroundInactive=120,119,117
+ForegroundLink=216,216,216
+ForegroundNegative=232,88,72
+ForegroundNeutral=192,162,95
+ForegroundNormal=180,180,180
+ForegroundPositive=120,183,83
+ForegroundVisited=142,121,165
+
+[DirSelect Dialog]
+DirSelectDialog Size=790,592
+History Items[$e]=
+
+[Directories-default]
+prefixes=/usr/share/kubuntu-default-settings/kde4-profile/default/
+
+[Emoticons]
+emoticonsTheme=Oxygen
+
+[General]
+BrowserApplication[$e]=!firefox
+ColorScheme=Krita-darker
+XftHintStyle=hintmedium
+dbfile=/home/matt/.mozilla/firefox/mwad0hks.default/places.sqlite
+desktopFont=Ubuntu,9,-1,5,50,0,0,0,0,0
+font=Ubuntu,9,-1,5,50,0,0,0,0,0
+menuFont=Ubuntu,9,-1,5,50,0,0,0,0,0
+shadeSortColumn=true
+smallestReadableFont=Ubuntu,8,-1,5,50,0,0,0,0,0
+taskbarFont=Ubuntu,9,-1,5,50,0,0,0,0,0
+toolBarFont=Ubuntu,8,-1,5,50,0,0,0,0,0
+widgetStyle=oxygen
+
+[KDE]
+AutoSelectDelay=-1
+ChangeCursor=true
+DoubleClickInterval=400
+ShowIconsInMenuItems=true
+ShowIconsOnPushButtons=true
+SingleClick=true
+StartDragDist=4
+StartDragTime=500
+WheelScrollLines=3
+contrast=7
+
+[KDE-Global GUI Settings]
+GraphicEffectsLevel=6
+
+[KFileDialog Settings]
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=0
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Previews=false
+Show Bookmarks=false
+Show Full Path=false
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+Speedbar Width=83
+View Style=Simple
+listViewIconSize=0
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
+[Locale]
+Country=us
+Language=en_US
+
+[Notification Messages]
+:confirmNewSession=false
+
+[PreviewSettings]
+UseFileThumbnails=true
+
+[Toolbar style]
+ToolButtonStyle=TextBesideIcon
+ToolButtonStyleOtherToolbars=TextBesideIcon
+
+[WM]
+activeBackground=80,80,80
+activeBlend=255,255,255
+activeFont=Ubuntu,9,-1,5,50,0,0,0,0,0
+activeForeground=180,180,180
+inactiveBackground=64,63,62
+inactiveBlend=75,71,67
+inactiveForeground=128,127,125
