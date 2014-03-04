@@ -27,3 +27,4 @@ function chpwd() {
         . .venv/bin/activate
     fi
 }
+
