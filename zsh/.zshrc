@@ -2,7 +2,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-bindkey -v
+bindkey -e
+bindkey '^F' history-incremental-pattern-search-forward
 
 autoload -Uz compinit
 compinit
