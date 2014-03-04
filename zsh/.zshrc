@@ -9,7 +9,7 @@ autoload -Uz compinit
 compinit
 setopt COMPLETE_IN_WORD
 
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH:~/bin
 export EDITOR=vim
 
 source ~/.antigen.zsh
