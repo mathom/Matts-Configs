@@ -23,11 +23,7 @@ antigen-theme mathom/Matts-Configs themes/dpoggi-short
 antigen-apply
 
 function chpwd() {
-    if [ -d .venv ]; then
-        . .venv/bin/activate
-    fi
+    [[ -d .venv ]] && . .venv/bin/activate
 }
 
-if [[ -a ~/.dircolors ]] {
-    eval `dircolors ~/.dircolors`
-}
+[[ -a ~/.dircolors ]] && eval `dircolors ~/.dircolors`
