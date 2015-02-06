@@ -26,6 +26,9 @@ function chpwd() {
     [[ -d .venv ]] && . .venv/bin/activate
 }
 
+# if a home venv exists, turn it on
+[[ -d ~/.venv ]] && . ~/.venv/bin/activate
+
 unset LSCOLORS
 [[ -a ~/.dircolors ]] && eval `dircolors ~/.dircolors`
 
