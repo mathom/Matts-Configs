@@ -176,6 +176,7 @@
  '(custom-group-tag-face ((t(:foreground "brown" :underline t))))
  '(custom-state-face ((t (:foreground "khaki"))))
  '(highlight ((t (:background "#3f5f5f"))))
+ '(hl-line ((t (:background "#3f5f5f"))))
  '(highline-face ((t (:background "SeaGreen"))))
  '(holiday-face ((t (:background "DimGray"))))
  '(info-menu-5 ((t (:underline t))))
