@@ -74,9 +74,6 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(classic
-                         solarized-dark
-                         solarized-light)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
@@ -147,6 +144,8 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
+  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+  (load-theme 'classic t)
   )
 
 (defun dotspacemacs/config ()
@@ -157,9 +156,6 @@ layers configuration."
 
 ;; Custom file types
 (add-to-list 'auto-mode-alist '("\\.sls\\'" . yaml-mode))
-
-;; Custom themes
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
