@@ -36,10 +36,12 @@
  '(default ((t (:background "darkslategrey" :foreground "AntiqueWhite"))))
  ;; avoid ugly random fringe color
  '(fringe ((t (:background "darkslategrey"))))
- 
+
  '(mouse ((t (:foregound "Grey"))))
  '(cursor ((t (:foregound "Red"))))
  '(border ((t (:foregound "black"))))
+
+ `(sp-pair-overlay-face              ((t (:background "#4f6f6f"))))
 
  '(gnus-cite-attribution-face ((t (:lforeground "lemon chiffon" :bold t))))
  '(gnus-cite-face-1 ((t (:foreground "LightSalmon"))))

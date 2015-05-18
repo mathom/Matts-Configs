@@ -20,9 +20,12 @@
      ;; better-defaults
      (git :variables
           git-gutter-use-fringe t)
+     (auto-completion :variables
+          auto-completion-use-tab-instead-of-enter t)
      ;; org
      python
      markdown
+     salt
      syntax-checking
      javascript
      html
@@ -153,6 +156,12 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
 )
+
+(defun what-face (pos)
+ (interactive "d")
+ (let ((face (or (get-char-property (point) 'read-face-name)
+	      (get-char-property (point) 'face))))
+  (if face (message "Face: %s" face) (message "No face at %d" pos))))
 
 ;; Custom file types
 (add-to-list 'auto-mode-alist '("\\.sls\\'" . yaml-mode))
