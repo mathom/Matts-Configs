@@ -19,27 +19,27 @@
      auto-completion
      ;; better-defaults
      (git :variables
+          git-enable-github-support t
           git-gutter-use-fringe t)
      (auto-completion :variables
           auto-completion-use-tab-instead-of-enter t)
      ;; org
-     python
-     markdown
-     salt
-     syntax-checking
-     javascript
-     html
-     yaml-mode
-     puppet
      dockerfile
      git
-     javascript
-     haskell
      go
-     osx
+     haskell
+     html
+     javascript
+     markdown
      ocaml
+     osx
+     puppet
+     python
      ruby
+     salt
      shell-scripts
+     syntax-checking
+     yaml-mode
      ;; themes-megapack
      classic-theme
      )
@@ -178,8 +178,18 @@ layers configuration."
  '(ahs-idle-interval 0.25)
  '(ahs-idle-timer 0 t)
  '(ahs-inhibit-face-list nil)
+ '(custom-enabled-themes (quote (classic)))
  '(custom-safe-themes
    (quote
-    ("4974f680cd265a7049d7bfbb9be82e78ae97c12dd5eac0205756acc3f424f882" default)))
+    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "645b2e8f2f79fc1ab4d60b412394f88b44fdbb2045bee9cbd8c0da08009f1b97" "4974f680cd265a7049d7bfbb9be82e78ae97c12dd5eac0205756acc3f424f882" default)))
  '(mac-mouse-wheel-smooth-scroll nil)
+ '(magit-use-overlays nil)
  '(ring-bell-function (quote ignore) t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
+ ;; '(magit-item-highlight ((t (:background "#3f5f5f")))))

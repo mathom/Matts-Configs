@@ -200,7 +200,9 @@
  '(widget-single-line-field-face ((t (:foreground "LightBlue"))))
  '(woman-bold-face ((t (:bold t))))
  '(woman-italic-face ((t (:foreground "beige"))))
- '(woman-unknown-face ((t (:foreground "LightSalmon")))))
+ '(woman-unknown-face ((t (:foreground "LightSalmon"))))
+
+ '(magit-item-highlight ((t (:background "#3f5f5f")))))
 
 ;;;###autoload
 (when load-file-name
