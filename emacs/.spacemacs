@@ -24,8 +24,11 @@
      (auto-completion :variables
           auto-completion-use-tab-instead-of-enter t)
      ;; org
+     chrome
      dockerfile
+     facemenu+
      git
+     github
      go
      haskell
      html
@@ -37,9 +40,10 @@
      python
      ruby
      salt
+     semantic
      shell-scripts
      syntax-checking
-     yaml-mode
+     yaml
      ;; themes-megapack
      classic-theme
      )
@@ -145,6 +149,14 @@ before layers configuration."
    ;; specified with an installed package.
    ;; Not used for now.
    dotspacemacs-default-package-repository nil
+   ;; Don't whine about symlinks
+   vc-follow-symlinks t
+   ;; Don't show some file types
+   dired-omit-files-p t
+   dired-omit-extensions '(".pyc")
+   ;; make the scroll wheel sensible
+   mouse-wheel-scroll-amount '(2 ((shift) . 1) ((control) . nil))
+   mouse-wheel-progressive-speed nil
    )
   ;; User initialization goes here
   (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
@@ -155,6 +167,7 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  (add-hook 'prog-mode-hook 'linum-mode)
 )
 
 (defun what-face (pos)

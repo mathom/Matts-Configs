@@ -202,7 +202,20 @@
  '(woman-italic-face ((t (:foreground "beige"))))
  '(woman-unknown-face ((t (:foreground "LightSalmon"))))
 
- '(magit-item-highlight ((t (:background "#3f5f5f")))))
+ '(magit-item-highlight ((t (:background "#3f5f5f"))))
+
+ ;; custom things needed to make spacemacs look decent
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil))))
+ '(font-lock-comment-face ((t (:background "dark slate grey" :foreground "tomato3"))))
+ '(linum ((t (:background "dark slate grey" :foreground "wheat"))))
+ '(mode-line ((t (:background "#222226" :foreground "#b2b2b2" :box nil))))
+ '(mode-line-inactive ((t (:background "#292b2e" :foreground "#b2b2b2" :box nil))))
+ '(page-break-lines ((t (:foreground "light slate gray"))))
+ '(powerline-active1 ((t (:background "cadet blue" :foreground "black"))))
+ '(powerline-active2 ((t (:background "cadet blue" :foreground "black"))))
+
+ '(spacemacs-motion-face ((t (:inherit mode-line :background "plum3" :foreground "#222226" :box (:line-width 1 :color "#5d4d7a"))))))
 
 ;;;###autoload
 (when load-file-name
