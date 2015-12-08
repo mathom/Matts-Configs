@@ -44,6 +44,7 @@
      shell-scripts
      syntax-checking
      yaml
+     salt-mode
      ;; themes-megapack
      classic-theme
      )
@@ -159,8 +160,6 @@ before layers configuration."
    mouse-wheel-progressive-speed nil
    )
   ;; User initialization goes here
-  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-  (load-theme 'classic t)
   )
 
 (defun dotspacemacs/config ()
@@ -168,6 +167,8 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
   (add-hook 'prog-mode-hook 'linum-mode)
+  (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+  (load-theme 'classic t)
 )
 
 (defun what-face (pos)
@@ -194,7 +195,7 @@ layers configuration."
  '(custom-enabled-themes (quote (classic)))
  '(custom-safe-themes
    (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "645b2e8f2f79fc1ab4d60b412394f88b44fdbb2045bee9cbd8c0da08009f1b97" "4974f680cd265a7049d7bfbb9be82e78ae97c12dd5eac0205756acc3f424f882" default)))
+    ("b584a2b63b66e1b4e6ecd141a736c55d09ba9a0b1aa96f15261c612bf86afba8" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "645b2e8f2f79fc1ab4d60b412394f88b44fdbb2045bee9cbd8c0da08009f1b97" "4974f680cd265a7049d7bfbb9be82e78ae97c12dd5eac0205756acc3f424f882" default)))
  '(mac-mouse-wheel-smooth-scroll nil)
  '(magit-use-overlays nil)
  '(ring-bell-function (quote ignore) t))

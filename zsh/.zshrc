@@ -25,6 +25,7 @@ antigen-apply
 function chpwd() {
     [[ -d .venv ]] && . .venv/bin/activate
 }
+export PATH=$PATH:~/.venv/bin
 
 # if a home venv exists, turn it on
 [[ -d ~/.venv ]] && . ~/.venv/bin/activate
