@@ -2,6 +2,9 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
+# osx brew crud
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
 bindkey -e
 bindkey '^F' history-incremental-pattern-search-forward
 
