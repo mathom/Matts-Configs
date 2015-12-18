@@ -37,3 +37,5 @@ unset LSCOLORS
 [[ -a ~/.dircolors ]] && eval `dircolors ~/.dircolors`
 
 export PATH=$PATH:/usr/local/mysql/bin
+export GOPATH=~/go
+export PATH=$PATH:~/go/bin
