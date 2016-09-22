@@ -6,7 +6,7 @@ if [ -f ~/.gitconfig ]; then
     rm ~/.gitconfig
 fi
 
-stow -t ~ --override=".*" tmux git vim zsh dircolors emacs vimrc_custom
+stow -t ~ --override=".*" tmux git vim zsh dircolors emacs
 
 if [ -z "$name" ]; then
     git config --global --replace-all user.name "$name"

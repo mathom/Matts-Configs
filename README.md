@@ -15,8 +15,6 @@ cd Matts-Configs
 
 # install general packages (cross platform)
 stow -t ~ tmux git vim zsh dircolors emacs
-# install my custom vim stuff
-stow -t ~ --override .vimrc_custom vimrc_custom
 # install my bin scripts
 stow -t ~/bin bin
 
