@@ -91,6 +91,8 @@ before layers configuration."
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
+   ;; fix slow helm
+   projectile-enable-caching t
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The leader key accessible in `emacs state' and `insert state'
