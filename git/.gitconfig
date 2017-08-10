@@ -8,3 +8,9 @@
     slog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     st = status
     tracking = for-each-ref --format='%(refname:short) <- %(upstream:short)' refs/heads
+[user]
+	name = Matt Thompson
+	email = matt@britecore.com
+[credential]
+	helper = !aws codecommit credential-helper $@
+	UseHttpPath = true
