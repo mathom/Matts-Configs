@@ -20,6 +20,7 @@
      ;; better-defaults
      (git :variables
           git-enable-github-support t
+          git-link-use-commit t
           git-gutter-use-fringe t)
      (auto-completion :variables
           auto-completion-use-tab-instead-of-enter t)
