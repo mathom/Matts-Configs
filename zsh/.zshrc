@@ -44,7 +44,7 @@ export PATH=$PATH:~/go/bin
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 source ~/.venv/bin/aws_zsh_completer.sh
-export AWS_PROFILE=devops
+#export AWS_PROFILE=devops
 
 function awsprofile {
     export AWS_DEFAULT_PROFILE=$1
