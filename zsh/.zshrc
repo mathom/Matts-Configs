@@ -65,6 +65,12 @@ function awsrole {
     eval $(jq -r '.Credentials | "export AWS_ACCESS_KEY_ID="+.AccessKeyId, "export AWS_SECRET_ACCESS_KEY="+.SecretAccessKey, "export AWS_SESSION_TOKEN="+.SessionToken' < ~/.aws/cli/cache/$1--*.json)
 }
 
+function ssh-ec2 {
+  inst=$1
+  shift
+  ssh $(aws ec2 describe-instances --filter Name=instance-id,Values=$inst --query 'Reservations[0].Instances[0].PrivateIpAddress' --output text) $@
+}
+
 PATH="/Users/mathom/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/mathom/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/Users/mathom/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
