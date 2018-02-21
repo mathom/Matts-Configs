@@ -43,6 +43,11 @@ export PATH=$PATH:~/go/bin
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+autoload -U compinit && compinit
+autoload -U bashcompinit && bashcompinit
+source ~/.bash_sft_complete
+test -e ~/.bash_sft_complete && source ~/.bash_sft_complete
 source ~/.venv/bin/aws_zsh_completer.sh
 #export AWS_PROFILE=devops
 
