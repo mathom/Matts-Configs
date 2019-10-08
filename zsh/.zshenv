@@ -1,23 +1,39 @@
+DEFAULT_CONDA_ENV=py37
+MINICONDA_INSTALL=~/miniconda3
+
+if [ -d $MINICONDA_INSTALL/bin ]; then
+    export PATH=$MINICONDA_INSTALL/bin:$PATH
+    if [ -d $MINICONDA_INSTALL/envs/$DEFAULT_CONDA_ENV ]; then
+        source activate $DEFAULT_CONDA_ENV
+    fi
+fi
+
+export ZSH="~/.omz.git"
+
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="fishy"
+
+COMPLETION_WAITING_DOTS="true"
+
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+
 # osx brew crud
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
-export PATH=/usr/local/bin:$PATH:~/bin
-export PATH=$PATH:/usr/local/mysql/bin
+export PATH=~/bin:/usr/local/bin:$PATH
+export EDITOR=vim
 
+export PATH=$PATH:/usr/local/mysql/bin
 export GOPATH=~/go
 export PATH=$PATH:~/go/bin
 
-export EDITOR=vim
+PATH="/Users/mathom/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/mathom/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/mathom/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/mathom/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/mathom/perl5"; export PERL_MM_OPT;
 
-__conda_setup="$(CONDA_REPORT_ERRORS=false $HOME/miniconda3/bin/conda shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/miniconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="$HOME/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+export NVM_DIR="$HOME/.nvm"
+

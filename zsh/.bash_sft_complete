@@ -7,4 +7,14 @@ _cli_bash_autocomplete() {
     return 0
 }
 
+_cli_sft_autocomplete() {
+    local cur opts base
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    opts=$( sft ssh --generate-bash-completion )
+    COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+    return 0
+}
+
 complete -F _cli_bash_autocomplete sft
+complete -F _cli_sft_autocomplete ssh
