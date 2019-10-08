@@ -8,12 +8,14 @@ if [ -d $MINICONDA_INSTALL/bin ]; then
     fi
 fi
 
-export ZSH="~/.omz.git"
+export ZSH=~/.omz.git
+
+export ZSH_CUSTOM=~/.zsh_custom
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="fishy"
+export ZSH_THEME="dpoggi-short"
 
-COMPLETION_WAITING_DOTS="true"
+export COMPLETION_WAITING_DOTS="true"
 
 HISTFILE=~/.histfile
 HISTSIZE=1000
