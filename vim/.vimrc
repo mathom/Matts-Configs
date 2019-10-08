@@ -87,5 +87,7 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+set modeline
+set modelines=5
 set background=dark
 colorscheme gruvbox
