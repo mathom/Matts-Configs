@@ -1,41 +1,27 @@
-DEFAULT_CONDA_ENV=py37
-MINICONDA_INSTALL=~/miniconda3
+export ZSH="$HOME/.omz.git"
 
-if [ -d $MINICONDA_INSTALL/bin ]; then
-    export PATH=$MINICONDA_INSTALL/bin:$PATH
-    if [ -d $MINICONDA_INSTALL/envs/$DEFAULT_CONDA_ENV ]; then
-        source activate $DEFAULT_CONDA_ENV
-    fi
-fi
-
-export ZSH=~/.omz.git
-
-export ZSH_CUSTOM=~/.zsh_custom
+export ZSH_CUSTOM="$HOME/.zsh_custom"
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 export ZSH_THEME="dpoggi-short"
 
 export COMPLETION_WAITING_DOTS="true"
 
-HISTFILE=~/.histfile
+HISTFILE="$HOME/.histfile"
 HISTSIZE=1000
 SAVEHIST=1000
+
+export EDITOR="vim"
 
 # osx brew crud
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
-export PATH=~/bin:/usr/local/bin:$PATH
-export EDITOR=vim
+export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
+# export GOPATH=~/go
+# export PATH=$PATH:~/go/bin
 
-export PATH=$PATH:/usr/local/mysql/bin
-export GOPATH=~/go
-export PATH=$PATH:~/go/bin
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-PATH="/Users/mathom/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/mathom/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/mathom/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/mathom/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/mathom/perl5"; export PERL_MM_OPT;
-
-export NVM_DIR="$HOME/.nvm"
-
+export CONDA_INSTALL="$HOME/miniconda3"
+export CONDA_ENV="py37"
