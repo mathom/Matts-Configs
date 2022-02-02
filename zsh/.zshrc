@@ -11,7 +11,7 @@ plugins=(
     docker
     encode64
     git
-    osx
+    macos
 )
 
 if [ ! -d $ZSH ]; then
