@@ -25,3 +25,7 @@ test -e ~/.bash_sft_complete && source ~/.bash_sft_complete
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 eval "$(pyenv init -)"
+
+eval "$(pyenv virtualenv-init -)"
+
+export PATH=/opt/homebrew/bin:$PATH
