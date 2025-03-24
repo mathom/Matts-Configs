@@ -22,10 +22,13 @@ source $ZSH/oh-my-zsh.sh
 
 test -e ~/.bash_sft_complete && source ~/.bash_sft_complete
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -f /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    export PATH=/opt/homebrew/bin:$PATH
+fi
 
-eval "$(pyenv init -)"
+if command -v pyenv 2>&1 >/dev/null; then
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
 
-eval "$(pyenv virtualenv-init -)"
-
-export PATH=/opt/homebrew/bin:$PATH
