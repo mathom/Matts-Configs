@@ -26,3 +26,5 @@
 [credential]
 	helper = !aws codecommit credential-helper $@
 	UseHttpPath = true
+[core]
+	editor = vim
