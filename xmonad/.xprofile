@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# swap mac meta keys around
+setxkbmap -layout us -option ctrl:nocaps -option ctrl:swap_lwin_lctl
+xrdb -merge ~/.Xresources
+
+# scroll the right way
+xinput set-prop bcm5974 319 0
+xinput set-prop bcm5974 311 1
+
+# set up xmobar fifos
+FIFODIR=$HOME/.local/fifo
+mkdir -p $FIFODIR
+[[ -p $FIFODIR/xm_vol ]] || mkfifo $FIFODIR/xm_vol
+$HOME/.local/volume.sh
+
+xfce4-clipman&
+
+# dark themes
+#export GTK_THEME=Adwaita-dark
+
