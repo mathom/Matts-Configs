@@ -12,7 +12,7 @@ xinput set-prop bcm5974 311 1
 FIFODIR=$HOME/.local/fifo
 mkdir -p $FIFODIR
 [[ -p $FIFODIR/xm_vol ]] || mkfifo $FIFODIR/xm_vol
-$HOME/.local/volume.sh
+$HOME/.local/bin/volume.sh
 
 xfce4-clipman&
 
