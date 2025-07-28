@@ -31,3 +31,4 @@ fi
 
 tee $FIFO <<< "<fc=$COLOR>$FORMATTED_OUTPUT</fc>"
 
+aplay /usr/share/sounds/sound-icons/cembalo-3.wav
